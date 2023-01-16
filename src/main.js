@@ -50,8 +50,9 @@ function addEmployees (){
     }]).then(response =>{
         var inputType = response.employeeType;
         if (inputType == "Exit"){
-            console.log(team);
-            let html = generateHTML(team);
+           let html = generateHTML(team);
+            fs.writeFile('../dist/generatedProfile.html', html, (err) =>
+            err ? console.log(err) : console.log('Successfully created generatedProfile.html!'));
             return;
         }else{
             let questions = [{
