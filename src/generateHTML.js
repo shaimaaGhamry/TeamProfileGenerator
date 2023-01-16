@@ -20,11 +20,11 @@ function generateHTML(team){
                 for(let i=0; i<team.length; i++){
                   var third_listItem = ""
                   if(team[i].type == "Manager") {
-                    third_listItem = team[i].officeNum
+                    third_listItem = "office Number: " + team[i].officeNum
                   } else if(team[i].type == "Engineer") {
-                    third_listItem = `<a  href='https://github.com/${team[i].gitHubName}'>${team[i].gitHubName}</a>`
+                    third_listItem = `GitHub: <a  href='https://github.com/${team[i].gitHubName}'>${team[i].gitHubName}</a>`
                   } else {
-                    third_listItem = team[i].school 
+                    third_listItem = "School: " + team[i].school 
                   }     
                                     
                   let html_card = ` 
@@ -37,8 +37,8 @@ function generateHTML(team){
                                 </div>
                                 <div id="card-body">
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">${team[i].id}</li>
-                                        <li class="list-group-item"><a href=mailto:${team[i].email}>${team[i].email}</a></li>
+                                        <li class="list-group-item">ID: ${team[i].id}</li>
+                                        <li class="list-group-item">Email: <a href=mailto:${team[i].email}>${team[i].email}</a></li>
                                         <li class="list-group-item">${third_listItem}</li> 
                                     </ul>
                                 </div>
