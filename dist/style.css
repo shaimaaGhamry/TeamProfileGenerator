@@ -1,0 +1,43 @@
+#cards-container{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    
+    border: 2px;
+    border-style: outset;
+    
+    margin: 5px;
+}
+ #card-header{
+    background-color: rgb(177, 216, 241);
+   
+ }
+
+ #card-body {
+    padding: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: lightblue;
+    margin: 10px;
+    padding: 5px;
+ }
+
+ header {
+    background-color: rgb(178, 216, 240);
+
+    text-align: center;
+
+    padding: 10px;
+    margin: 10px;
+ }
+ li{
+    list-style: none;
+ }
