@@ -11,6 +11,7 @@ describe("Engineer", () => {
         expect(engineer.name).toEqual("Shaimaa");
         expect(engineer.email).toEqual("Shaimaa_elghamry@hotmail.com");        
         expect(engineer.gitHubName).toEqual("ShaimaaGhamry");
+        expect(engineer.type).toEqual("Engineer");
       });
     });
 });
